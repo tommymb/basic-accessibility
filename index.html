@@ -7,28 +7,31 @@
   <link href="css/modules.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to main navigation</a></li>
+  <header role="banner">
     <h1>Pangolin<h1>
-    <nav>
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
-        <li><a href="#">Description</a></li>
-        <li><a href="#">Behaviour</a></li>
-        <li><a href="#">Conversation</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#behaviour">Behaviour</a></li>
+        <li><a href="#conversation">Conversation</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
+  <main role="main">
+    <section id="description" tabindex="0">
       <h2>Description</h2>
     </section>
-    <section>
+    <section id="behaviour" tabindex="0">
       <h2>Behaviour</h2>
     </section>
-    <section>
+    <section id="conversation" tabindex="0">
       <h2>Conversation</h2>
     </section>
   </main>
-  <footer>
+  <footer role="contentinfo">
     <small>© 1821 Pangolin</small>
   </footer>
 
